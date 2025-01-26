@@ -1,0 +1,52 @@
+.gallery-container{
+  padding: 0 var(--double-margin);
+}
+
+
+.figc-inner{
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+.modula-item-content .figc {
+  opacity: 1;
+  height: auto; 
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out; 
+  overflow: hidden; 
+}
+
+.modula-item-content:hover .figc {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.modula-item {
+  transition: transform 0.2s ease-in-out !important; 
+} 
+
+.modula-item:hover{
+  transform: scale(1.05) !important;
+}
+
+.jtg-title{
+  position: relative !important;
+  top: auto !important;
+  -webkit-transition: none !important;
+  transition: none !important; 
+  -webkit-transform: none !important;
+  transform: none !important;
+  right: auto !important;      
+  left: auto !important;       
+  padding: 1rem !important;
+  background-color: rgba(47, 51, 55, 0.8);
+  text-align: left !important;
+  font-size: 1rem !important;  
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.jtg-title::after{
+  display: none;
+}

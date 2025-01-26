@@ -1,0 +1,33 @@
+.faq-content{
+  max-width: 60%;
+  margin: var(--double-margin) auto;
+}
+
+.faq-content details{
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.faq-content details + details{
+  margin-top: 1rem;
+}
+
+.faq-content details>summary{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.regular-link-format a{
+  color: var(--jg-lime-color);
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  .faq-content{
+    max-width: 100%;
+    margin: var(--double-margin);
+  }
+}

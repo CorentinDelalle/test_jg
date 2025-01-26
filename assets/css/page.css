@@ -1,0 +1,33 @@
+.page-content{
+  max-width: 60%;
+  margin: var(--double-margin) auto;
+}
+
+.regular-page-title {
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+  margin: var(--double-margin) 0 var(--simple-margin) 0;
+  font-weight: 400;
+}
+
+.regular-page-title::after {
+  content: '';
+  position: absolute; 
+  left: 0; 
+  bottom: -3px; 
+  width: 100%; 
+  border-bottom: 2px solid var(--jg-lime-color); 
+}
+
+.page-portfolio{
+  margin: var(--double-margin);
+}
+
+@media screen and (max-width: 1080px) {
+  .page-content{
+    max-width: 100%;
+    margin: var(--double-margin);
+  }
+}
+

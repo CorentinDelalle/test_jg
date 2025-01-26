@@ -1,0 +1,101 @@
+.contact-introduction {
+  max-width: 60%;
+  margin: var(--double-margin) auto;
+  text-align: center;
+}
+
+.contact-introduction > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.wpcf7-form {
+  margin: var(--double-margin) auto;
+  padding: var(--double-margin);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  max-width: 60%;
+  border-radius: 10px;
+}
+
+.wpcf7-response-output {
+  margin: var(--simple-margin) 0 !important;
+  background-color: var(--jg-lime-color);
+  padding: 1rem !important;
+  border: none !important;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mail-phone-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.mail-phone-container p {
+  width: 50%;
+}
+
+input {
+  height: 2.5rem;
+  width: 100%;
+}
+
+.wpcf7-form-control-wrap {
+  margin-top: 0.5rem;
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: var(--jg-lime-color);
+  box-shadow: var(--jg-lime-color) 0px 1px 3px,
+    var(--jg-lime-color-fadded) 0px 0px 0px 2px;
+  outline: 0 none;
+}
+
+input[type="submit"] {
+  max-width: 15rem;
+  height: 3rem;
+}
+
+.label-name {
+  font-weight: 500;
+}
+
+.mandatory {
+  color: red;
+  font-size: 800;
+}
+
+.form-instruction {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-introduction {
+    max-width: 100%;
+    margin: var(--double-margin);
+  }
+
+  .mail-phone-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mail-phone-container p {
+    width: 100%;
+  }
+
+  .wpcf7-form {
+    margin: var(--double-margin);
+    max-width: 100%;
+  }
+}

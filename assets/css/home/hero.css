@@ -1,0 +1,142 @@
+.hero-section-text > h1,
+.hero-section-text > p,
+strong {
+  text-align: left;
+}
+
+.hero-section-text > h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  max-width: 40rem;
+}
+
+.hero-section-text > h1 > span {
+  font-weight: 700;
+}
+
+.hero-section-text > p {
+  margin: var(--double-margin) 0 0 0;
+  line-height: 1.5rem;
+}
+
+.action-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  position: relative;
+}
+
+.hero-section-img-container {
+  width: 100%;
+}
+
+.hero-section-img-container > img {
+  object-fit: cover;
+  height: 58rem;
+  width: 100%;
+}
+
+.hero-section-img-container-responsive {
+  display: none;
+}
+
+.hero-section-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 45%;
+  /* transform: translate(0, -50%); */
+  z-index: 10;
+  background-color: #ffffff9c;
+  padding: 3rem 2rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: slideInFromLeft 1.5s forwards;
+}
+
+.delivery {
+  margin-top: var(--simple-margin);
+  font-weight: 600;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    /* Start from -100% horizontally and keep the -50% vertical alignment */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    /* Move to 0% horizontally while maintaining the -50% vertical alignment */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero-section-text {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: initial;
+    justify-content: center;
+  }
+
+  .action-links {
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .hero-section-img-container {
+    display: none;
+  }
+
+  .hero-section-img-container-responsive {
+    display: block;
+  }
+
+  .hero-section-img-container-responsive > img {
+    min-height: 42rem;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .hero-section-text {
+    width: 100%;
+  }
+
+  .hero-section-text > h1 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .hero-section-img-container > img {
+    object-position: 55%;
+  }
+
+  .hero-section-text {
+    padding: 0rem 1rem;
+    border-radius: 0;
+  }
+
+  .hero-section-text > p {
+    margin-top: 3rem;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 400px) {
+    .hero-section-text > h1 {
+      font-size: 2.3rem;
+    }
+  }
+}

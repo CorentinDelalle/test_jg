@@ -1,0 +1,28 @@
+.page-title{
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.page-title>h1{
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--jg-lime-color);
+  width: fit-content;
+  padding-bottom: 0.2rem;
+  letter-spacing: 1px;
+}
+
+.page-subtitle{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+}

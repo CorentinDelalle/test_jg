@@ -1,0 +1,44 @@
+.page-introduction{
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.page-introduction>*{
+  width: 50%;
+}
+
+.page-introduction>div>img{
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+.page-introduction>article>h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--jg-lime-color);
+}
+
+.page-introduction>article>p{
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  
+}
+
+.page-introduction>article>span{
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 810px) {
+  .page-introduction{
+    flex-direction: column;
+  }
+  .page-introduction>*{
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+<svg width="448" height="43" viewBox="0 0 448 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M244 1H285V42H244V1Z" fill="black" fill-opacity="0.4"/>
+<path d="M285 1H325V42H285V1Z" fill="black" fill-opacity="0.3"/>
+<path d="M325 1H366V42H325V1Z" fill="#202020" fill-opacity="0.2"/>
+<path d="M366 1H406V42H366V1Z" fill="#101010" fill-opacity="0.1"/>
+<path d="M1 1H42V42H1V1Z" fill="black"/>
+<path d="M42 1H82V42H42V1Z" fill="black" fill-opacity="0.9"/>
+<path d="M82 1H123V42H82V1Z" fill="black" fill-opacity="0.8"/>
+<path d="M123 1H163V42H123V1Z" fill="black" fill-opacity="0.7"/>
+<path d="M163 1H204V42H163V1Z" fill="black" fill-opacity="0.6"/>
+<path d="M204 1H244V42H204V1Z" fill="black" fill-opacity="0.5"/>
+<path d="M244 1H285M244 1V42M244 1H204M285 1V42M285 1H325M285 42H244M285 42H325M244 42H204M325 1V42M325 1H366M325 42H366M366 1V42M366 1H406M366 42H406M406 1V42M406 1H447V42H406M42 1H1V42H42M42 1V42M42 1H82M42 42H82M82 1V42M82 1H123M82 42H123M123 1V42M123 1H163M123 42H163M163 1V42M163 1H204M163 42H204M204 1V42" stroke="black"/>
+</svg>

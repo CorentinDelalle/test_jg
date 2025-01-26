@@ -1,0 +1,145 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: var(--simple-margin);
+  padding-bottom: var(--simple-margin);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.site-branding {
+  margin-left: var(--double-margin);
+}
+
+.main-navigation {
+  margin-right: var(--double-margin);
+}
+.main-navigation > div {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--grey-color);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: var(--double-margin);
+}
+
+.menu-header-link > a:hover,
+.menu-header-link > a:hover span {
+  color: var(--jg-lime-color);
+}
+
+.custom-logo {
+  width: 17rem;
+}
+
+.menu-header > li > .sub-menu {
+  display: none;
+  position: absolute;
+  font-weight: 400;
+  font-size: 0.8rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sub-menu li > a {
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.menu-item > a > span {
+  font-weight: 600;
+}
+
+#about-us-anchor,
+#services-anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 810px) {
+  .custom-logo {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .custom-logo {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .menu-main-menu-container {
+    display: none;
+  }
+  .visible {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+  }
+
+  .menu-header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: var(--triple-margin) 0;
+    box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-navigation > div {
+    margin-top: 1rem;
+  }
+
+  .menu-header > li > .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: var(--simple-margin);
+    box-shadow: none;
+    background-color: white;
+  }
+
+  .services-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .services-dropdown:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    z-index: 100;
+  }
+
+  .sub-menu li a:hover {
+    background-color: var(--jg-lime-color-fadded);
+  }
+}
+
+@media screen and (max-width: 1265px) {
+  .menu-main-menu-container {
+    font-size: 0.9rem;
+    gap: 1.5rem;
+  }
+}

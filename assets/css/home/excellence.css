@@ -1,0 +1,98 @@
+.excellence,
+.execution {
+  display: flex;
+  /* max-width: var(--layout-max-width); */
+  min-height: 30rem;
+}
+
+.excellence > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 1rem;
+  background-image: url("/assets/img/txture-white.png");
+  /* background-color: var(--jg-yellow-color); */
+}
+
+.execution > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+  background-image: url("/assets/img/txture-white.png");
+  /* background-color: var(--jg-magenta-color); */
+}
+
+.excellence > section > h2,
+.execution > section > h2 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+.excellence > section > h2 {
+  color: var(--jg-magenta-color);
+}
+
+.execution > section > h2 {
+  color: var(--jg-magenta-color);
+}
+
+.excellence > img,
+.execution > img {
+  object-fit: cover;
+  max-width: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.excl{
+  margin-top: var(--triple-margin);
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/circle-scatter-haikei.svg");
+}
+
+.excl>h2{
+  font-size: 2rem;
+  padding: 0 2rem;
+  color: var(--jg-yellow-color);
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .excellence,
+  .execution {
+    flex-direction: column-reverse;
+  }
+
+  .execution > section,
+  .excellence > section {
+    width: 100%;
+    min-height: 12rem;
+  }
+
+  .excellence > img,
+  .execution > img {
+    max-width: 100%;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 810px) {
+
+    .excellence > section > h2,
+    .execution > section > h2 {
+      font-size: 1.5rem;
+    }
+}

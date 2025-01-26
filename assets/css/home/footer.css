@@ -1,0 +1,113 @@
+footer {
+  width: 100%;
+  background-color: var(--grey-color);
+}
+
+footer section > h4 {
+  font-weight: 700;
+  border-bottom: 2px solid var(--jg-lime-color);
+  padding-bottom: 5px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 var(--double-margin);
+  padding: 3rem 0;
+}
+
+.footer-products-list-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.right-part-footer {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-footer>li{
+  color: white;
+}
+
+.footer-products-list {
+  margin-top: 0.5rem;
+}
+
+.footer-products-list > h5 {
+  font-weight: 600;
+  color: white;
+}
+
+.footer-ul {
+  margin-top: 0.5rem;
+}
+
+.footer-ul > li {
+  color: white;
+}
+
+.footer-ul li:not(:first-child) {
+  margin-top: 0.4rem;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--jg-lime-color);
+}
+
+.sub-footer>* {
+  text-align: center;
+}
+
+.social-media-icon-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-media-icon {
+  margin-top: 0.4rem;
+  width: 2.5rem;
+}
+
+.logo-jg-footer {
+  max-height: 7rem;
+}
+
+.footer-link:hover{
+  color: var(--jg-magenta-color);
+}
+
+@media screen and (max-width: 1080px) {
+  footer > div {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 810px) {
+  .footer-products-list-container {
+    flex-wrap: wrap;
+  }
+
+  .right-part-footer {
+    flex-direction: column;
+    margin-top: var(--triple-margin);;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-part-footer>*+* {
+    margin-top: var(--double-margin);
+  }
+
+  .main-footer{
+    margin: 0 var(--double-margin);
+  }
+}
