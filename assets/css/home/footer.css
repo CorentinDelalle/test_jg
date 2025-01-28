@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background-color: var(--grey-color);
+  background-color: red;
 }
 
 footer section > h4 {
